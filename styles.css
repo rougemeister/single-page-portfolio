@@ -107,4 +107,13 @@ button {
 
 .illustrations-tile {
     background-color: var(--light-red);
+    grid-column: span 2;
+}
+
+
+.group-tiles {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+   
 }
