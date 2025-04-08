@@ -105,6 +105,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 }
 
 .tiles {
@@ -179,10 +180,16 @@ button {
 .about-image {
     width: 300px;
     height: 300px;
+    margin-bottom: 40px;
 }
 .about-title {
     font-size: 26px;
 }
 .about-text {
     color: var(--medium-brown);
+    margin: 24px 0;
+}
+
+.about-button {
+    background-color: var(--light-red);
 }
