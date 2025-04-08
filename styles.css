@@ -41,7 +41,21 @@ body {
     background-color: var(--light-cream);
     color: var(--text-secondary-color);
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tiles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .flex {
@@ -59,7 +73,9 @@ body {
 .text-align-center {
     text-align: center;
 }
-
+.align-self-end {
+    align-self: flex-end;
+}
 
 
 .logo img {
@@ -92,14 +108,24 @@ button {
     height: 364px;
 
 }
+
+.flex-col {
+    flex-direction: column;
+}
 .graphic-design-tile img {
     align-self: flex-end;
 }
 
+
+.apps-tile, .ux-ui-tile {
+    width: 159px;
+    height: 182px;
+}
 .ux-ui-tile {
     background-color: var(--summer-yellow);
   
 }
+
 
 .apps-tile {
     background-color: var(--pink);
@@ -107,6 +133,7 @@ button {
 
 .illustrations-tile {
     background-color: var(--light-red);
+    height: 158px;
     grid-column: span 2;
 }
 
