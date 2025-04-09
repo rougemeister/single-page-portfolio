@@ -193,3 +193,29 @@ button {
 .about-button {
     background-color: var(--light-red);
 }
+
+.portfolio {
+    gap: 32px;
+}
+.portfolio-showcase {
+    gap: 15px;
+    overflow: auto;
+
+}
+.showcase-img {
+   width: 270px;
+   height: 180px;
+   border-radius: 8px;
+}
+
+.scroll-buttons {
+    display: flex;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+.scroll-button {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+}
