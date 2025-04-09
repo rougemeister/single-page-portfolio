@@ -213,6 +213,7 @@ button {
 
 .portfolio {
     gap: 32px;
+    margin: 100px 0;
 }
 .portfolio-showcase {
     gap: 15px;
@@ -246,7 +247,7 @@ button {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    margin: 100px 0 40px 0;
+    margin-bottom: 40px;
 }
 
 .call-to-action-button {
@@ -283,7 +284,6 @@ button {
     .tiles {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
         width: 100%;
         margin-bottom: 120px;
 
