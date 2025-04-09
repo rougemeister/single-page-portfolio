@@ -17,15 +17,18 @@
     --button-secondary: var(--light-red);
     --background-color: var(--light-cream);
 
-/* Fonts */
+/* Typography */
     --text-primary-color: var(--light-cream);
     --text-secondary-color: var(--black);
     --text-accent-color: var(--medium-brown);
     
     --heading-large: 56px;
-    --heading-medium: 40px;
+    --heading-medium: 43px;
     --heading-small: 32px;
+
+    --text-large: 24px;
     --text-medium: 18px;
+    --text-small: 16px;
 
     --line-height-normal: 26px;
 }
@@ -42,9 +45,9 @@ body {
     background-color: var(--light-cream);
     color: var(--text-secondary-color);
     padding: 16px;
-    display: flex;
-    flex-direction: column;
+   
 }
+
 
 main {
     display: flex;
@@ -57,12 +60,16 @@ main {
     padding: 5px 18px;
 }
 
+
+.p-text {
+    font-size: var(--text-small);
+}
 .page-subtitle {
     color: var(--text-accent-color);
     margin-top: 16px;
 }
 
-.title-wrapper h1 {
+.page-title {
     font-size: 36px;
 }
 .tiles {
@@ -245,4 +252,91 @@ button {
 
 .call-to-action-text {
     margin: 24px 0;
+}
+
+
+
+
+
+@media screen and (min-width: 480px) {
+    body {
+        padding: 40px;
+    }
+
+    button {
+        width: 228px;
+        height: 56px;
+        font-size: 16px;
+    }
+    .logo img {
+        width: 64px;
+        height: 64px;
+    }
+    .container {
+        width: 690px;
+        margin: 0 auto;
+    }
+
+    .tiles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .tiles {
+        margin-bottom: 120px;
+    }
+
+    .title-wrapper {
+        padding: 0 56px;
+        margin: 64px 0;
+    }
+    .page-title {
+        font-size: var(--heading-medium);
+    }
+
+    .p-text {
+        font-size: var(--text-medium);
+    }
+
+    .about {
+        height: 364px;
+        flex-direction: row;
+        gap: 70px;
+        text-align: left;
+        position: relative;
+        margin-bottom: 120px;
+    }
+
+    .about-image {
+        width: 364px;
+        height: 364px;
+        margin: 0;
+        margin-left: -5.2rem;
+    }
+    .about-text-container {
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .about-title {
+        font-size: var(--heading-small);
+    }
+    .about-button {
+        align-self: flex-start;
+    }
+    .portfolio {
+        gap: 56px;
+    }
+    .portfolio-showcase {
+        gap: 30px;
+    }
+    .showcase-img {
+        width: 540px;
+        height: 360px;
+    }
+
+    .call-to-action-container {
+        margin: 120px 0 56px 0;
+    }
 }
