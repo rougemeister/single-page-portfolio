@@ -336,6 +336,7 @@ button {
     }
     .portfolio {
         gap: 56px;
+        margin: 0;
     }
     .portfolio-showcase {
         gap: 30px;
