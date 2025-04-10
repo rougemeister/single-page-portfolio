@@ -329,7 +329,7 @@ button {
     }
 
     .about-title {
-        font-size: var(--heading-small);
+        font-size: 32px;
     }
     .about-button {
         align-self: flex-start;
