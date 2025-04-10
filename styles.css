@@ -51,7 +51,29 @@ body {
    
 }
 
-/* Structure of the page */
+/* Typography */
+.p-text {
+    font-size: var(--text-small);
+}
+
+.page-title {
+    font-size: var(--heading-small);
+}
+
+
+
+.p-text-line-height {
+    line-height: var(--line-height-normal);
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+
+
+
+/* Layout */
 
 main {
     display: flex;
@@ -65,17 +87,15 @@ main {
 }
 
 
-.p-text {
-    font-size: var(--text-small);
-}
 .page-subtitle {
     color: var(--text-accent-color);
     margin-top: 16px;
 }
 
-.page-title {
-    font-size: 36px;
+.align-center {
+    align-items: center;
 }
+
 .tiles {
     display: flex;
     flex-direction: column;
@@ -90,18 +110,9 @@ main {
     justify-content: space-between;
 }
 
-.align-center {
-    align-items: center;
-}
 
 
-.p-text-line-height {
-    line-height: var(--line-height-normal);
-}
 
-.text-align-center {
-    text-align: center;
-}
 .align-self-end {
     align-self: flex-end;
 }
@@ -111,41 +122,6 @@ main {
     width: 48px;
     height: 48px;
 }
-
-button {
-    background-color: var(--button-primary);
-    color: var(--light-cream);
-    width: 176px;
-    height: 44px;
-    border: none;
-    border-radius: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-
-.button-secondary{
-    background-color: var(--button-secondary);
-}
-
-
-
-.button-primary:hover,
-.button-primary:active {
-    background-color: var(--galactic-blue);
-    transition: 0.3s;
-}
-
-.button-secondary:hover,
-.button-secondary:active {
-    background-color: var(--summer-yellow);
-    transition: 0.3s;
-}
-
-
 
 .tiles {
     margin-bottom: 100px;
@@ -216,9 +192,7 @@ button {
     grid-template-columns: 1fr 1fr;
 }
 
-.about {
-    text-align: center;
-}
+
 .about-image {
     width: 300px;
     height: 300px;
@@ -232,14 +206,11 @@ button {
     margin: 24px 0;
 }
 
-
-
-
-
 .portfolio {
     gap: 32px;
     margin: 100px 0;
 }
+
 .portfolio-showcase {
     gap: 15px;
     overflow: auto;
@@ -258,18 +229,6 @@ button {
    border-radius: 8px;
 }
 
-.scroll-buttons {
-    display: flex;
-    margin: 0 auto;
-    gap: 16px;
-}
-
-.scroll-button {
-    width: 64px;
-    height: 64px;
-    text-align: center;
-}
-
 .call-to-action-container {
     height: 352px;
     background-color: var(--black);
@@ -282,17 +241,74 @@ button {
     margin-bottom: 40px;
 }
 
-.call-to-action-button {
-    background-color: var(--button-secondary);
-}
 
 .call-to-action-text {
     margin: 24px 0;
 }
 
 
+/* Interactive Elements 
+
+* Buttons 
+
+*/
+
+button {
+    background-color: var(--button-primary);
+    color: var(--light-cream);
+    width: 176px;
+    height: 44px;
+    border: none;
+    border-radius: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
 
 
+.button-secondary{
+    background-color: var(--button-secondary);
+}
+
+
+
+.button-primary:hover,
+.button-primary:active {
+    background-color: var(--galactic-blue);
+    transition: 0.3s;
+}
+
+.button-secondary:hover,
+.button-secondary:active {
+    background-color: var(--summer-yellow);
+    transition: 0.3s;
+}
+
+.scroll-buttons {
+    display: flex;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+.scroll-button {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+}
+
+
+
+.call-to-action-button {
+    background-color: var(--button-secondary);
+}
+
+
+
+
+
+/* Media Queries */
 
 @media screen and (min-width: 480px) {
     body {
