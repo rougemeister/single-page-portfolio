@@ -33,6 +33,9 @@
     --line-height-normal: 26px;
 }
 
+
+
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -48,6 +51,7 @@ body {
    
 }
 
+/* Structure of the page */
 
 main {
     display: flex;
@@ -241,6 +245,13 @@ button {
     overflow: auto;
 
 }
+
+.portfolio-showcase::-webkit-scrollbar {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
+    display: none;
+  }
+
 .showcase-img {
    width: 270px;
    height: 180px;
