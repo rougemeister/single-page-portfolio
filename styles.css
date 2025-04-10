@@ -122,6 +122,27 @@ button {
     font-size: 14px;
 }
 
+
+.button-secondary{
+    background-color: var(--button-secondary);
+}
+
+
+
+.button-primary:hover,
+.button-primary:active {
+    background-color: var(--galactic-blue);
+    transition: 0.3s;
+}
+
+.button-secondary:hover,
+.button-secondary:active {
+    background-color: var(--summer-yellow);
+    transition: 0.3s;
+}
+
+
+
 .tiles {
     margin-bottom: 100px;
 }
@@ -207,9 +228,9 @@ button {
     margin: 24px 0;
 }
 
-.about-button {
-    background-color: var(--light-red);
-}
+
+
+
 
 .portfolio {
     gap: 32px;
